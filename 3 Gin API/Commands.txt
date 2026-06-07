@@ -11,3 +11,11 @@ go get gorm.io/driver/postgres
 go get github.com/golang-jwt/jwt/v5
 
 go run .\cmd\main.go
+
+go build -o app ./cmd/main.go
+
+$env:GOOS="linux"
+$env:GOARCH="amd64"
+go build -o app ./cmd/main.go
+
+GOOS=linux GOARCH=amd64 go build -o app ./cmd/main.go
