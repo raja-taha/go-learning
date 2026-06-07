@@ -1,0 +1,9 @@
+go install github.com/beego/bee/v2@latest
+bee version
+
+bee new user-api
+
+cd user-api
+go mod tidy
+
+bee run
